@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Notes</title>
+</head>
+<style>
+    div {
+        margin: 10px;
+    }
+    form {
+        margin-bottom: 50px;
+    }
+    label {
+        display: inline-block;
+        min-width: 95px;
+        text-align: right;
+    }
+    thead {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    table {
+        margin-bottom: 25px;
+    }
+</style>
+<body>
+    <header><h1>Week 4</h1></header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>I-Number</th>
+                </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+        </table>
+        <form>
+            <div>
+                <label for="firstName">First Name:    </label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div>
+                <label for="lastName">Last Name:    </label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div>
+                <label for="iNumber">I-Number:</label>
+                <input type="number" name="iNumber" id="iNumber">
+            </div>
+            <div>
+                <input type="submit" value="Add">
+                <input type="reset" name="Reset">
+            </div>
+        </form>
+    </main>
+    <script src="scripts/week4.js" type="module"></script>
+</body>
+</html>
