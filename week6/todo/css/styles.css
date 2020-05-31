@@ -1,0 +1,126 @@
+/* icons */
+.unchecked::after{
+    content: "\2610";
+}
+.checked::before {
+    content: "\2611";
+}
+.linethrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.plus::after{
+    content: "\2795";
+}
+.refresh::after{
+    content: "\f021";
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.123);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+}
+
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('../bloody lioness.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+}
+h1 .clear{
+    color: white;
+    padding: 10px 0 0 10px;
+}
+.clear{
+    width : 30px;
+    height: 30px;
+}
+
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    overflow: auto;
+}
+
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item div.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+
+.item div.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item div.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.add-item{
+    position: relative;
+    width: 360px;
+    height: 40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-item div{
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-item input{
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
